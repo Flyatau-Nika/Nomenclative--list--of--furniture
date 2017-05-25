@@ -1,0 +1,24 @@
+﻿<Window x:Class="Nomenclative__list__of__furniture.Base"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nomenclative__list__of__furniture"
+        mc:Ignorable="d"
+        Title="Base" Height="470.237" Width="834">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
+            <Button Content="Мебель" MinWidth="100" Click="FurnButton"/>
+            <Button Content="Аксессуары" MinWidth="100" Margin="0,0,0,0" Click="AcesButton"/>
+        </StackPanel>
+        <Frame x:Name="Main" Margin="0,35,0,40" NavigationUIVisibility="Hidden"/>
+        <Button x:Name="buttonadd" Content="Добавить новый объект" HorizontalAlignment="Left" Margin="58,408,0,0" VerticalAlignment="Top" Width="190" Click="button_Click"/>
+        <Button x:Name="buttondelete" Content="Удалить" HorizontalAlignment="Left" Margin="386,408,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.831,0.557" Click="buttondelete_Click" />
+        <Button x:Name="buttonsearch" Content="Поиск" HorizontalAlignment="Left" Margin="575,408,0,0" VerticalAlignment="Top" Width="76" Click="buttonsearch_Click"/>
+        <TextBox x:Name="textBoxSearch" HorizontalAlignment="Left" Height="23" Margin="676,407,0,0" TextWrapping="Wrap" Text="Введите ключевое слово:" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

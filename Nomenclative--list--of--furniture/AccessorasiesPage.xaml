@@ -1,0 +1,22 @@
+﻿<Page x:Class="Nomenclative__list__of__furniture.AccessorasiesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Nomenclative__list__of__furniture"
+      mc:Ignorable="d"
+      Title="AccessorasiesPage" Height="300" Width="804">
+
+    <Grid >
+        <ListView x:Name="listViewaccess" Margin="0,0,0,0" Height ="300" Width="804">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Название" Width="100" DisplayMemberBinding="{Binding Path=name}"/>
+                    <GridViewColumn Header="Размер" Width="70" DisplayMemberBinding="{Binding Path=size}"/>
+                    <GridViewColumn Header="Набор" Width="70" DisplayMemberBinding="{Binding Path=set}"/>
+                    <GridViewColumn Header="Цвет" Width="70" DisplayMemberBinding="{Binding Path=colour}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<ListFurn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LF>
+    <Furniture>
+      <name>ффыва</name>
+      <size>21</size>
+      <set>Владлена</set>
+      <colour>2</colour>
+    </Furniture>
+    <Furniture>
+      <name>321</name>
+      <size>444321</size>
+      <set>Изабелла</set>
+      <colour>4444444</colour>
+    </Furniture>
+    <Furniture>
+      <name>чссс</name>
+      <size>44</size>
+      <set>Даниэлла</set>
+      <colour>77</colour>
+    </Furniture>
+    <Furniture>
+      <name>орпл</name>
+      <size>эхзш</size>
+      <set>Даниэлла</set>
+      <colour>зжшр</colour>
+    </Furniture>
+    <Furniture>
+      <name>Шкаф</name>
+      <size>120х50х260</size>
+      <set>Вероника</set>
+      <colour>Бежевый</colour>
+    </Furniture>
+    <Furniture>
+      <name>Тумбочка</name>
+      <size>40х150х80</size>
+      <set>Каролина</set>
+      <colour>Бирюзовый</colour>
+    </Furniture>
+    <Furniture>
+      <name>Полочка</name>
+      <size />
+      <set />
+      <colour>Коричневый</colour>
+    </Furniture>
+    <Furniture>
+      <name>Полка</name>
+      <size />
+      <set />
+      <colour>Белый</colour>
+    </Furniture>
+    <Furniture>
+      <name>Шкафчик</name>
+      <size />
+      <set />
+      <colour>Коричневый</colour>
+    </Furniture>
+    <Furniture>
+      <name>Раковина</name>
+      <size />
+      <set />
+      <colour>Белый</colour>
+    </Furniture>
+  </LF>
+</ListFurn>
