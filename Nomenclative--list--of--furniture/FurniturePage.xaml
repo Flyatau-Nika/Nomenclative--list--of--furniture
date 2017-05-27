@@ -11,10 +11,12 @@
         <ListView x:Name="listViewfurn" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="804" Margin="10,10,-10,-10">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Наименование" Width="100" DisplayMemberBinding="{Binding Path=name}"/>
-                    <GridViewColumn Header="Размер" Width="100" DisplayMemberBinding="{Binding Path=size}"/>
-                    <GridViewColumn Header="Набор" Width="70" DisplayMemberBinding="{Binding Path=set}"/>
-                    <GridViewColumn Header="Цвет" Width="100" DisplayMemberBinding="{Binding Path=colour}"/>
+                    <GridViewColumn Header="Название" Width="140" DisplayMemberBinding="{Binding Path=name}"/>
+                    <GridViewColumn Header="Размер" Width="140" DisplayMemberBinding="{Binding Path=size}"/>
+                    <GridViewColumn Header="Набор" Width="140" DisplayMemberBinding="{Binding Path=set}"/>
+                    <GridViewColumn Header="Цвет" Width="140" DisplayMemberBinding="{Binding Path=colour}"/>
+                    <GridViewColumn Header="Материал" Width="140" DisplayMemberBinding="{Binding Path=material}"/>
+                    <GridViewColumn Header="Цена" Width="100" DisplayMemberBinding="{Binding Path=price}"/>
                 </GridView>
             </ListView.View>
         </ListView>

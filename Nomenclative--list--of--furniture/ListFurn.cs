@@ -8,7 +8,7 @@ namespace Nomenclative__list__of__furniture
 {[Serializable]
     public class ListFurn
     {
-        public List<Furniture> LF { get; set; }
+        public List<Furniture> LF { get; set; } = new List<Furniture>();
         public ListFurn(List<Furniture> lf)
         {
             LF = lf;
@@ -16,7 +16,6 @@ namespace Nomenclative__list__of__furniture
 
         public ListFurn()
         {
-
         }
     }
 }

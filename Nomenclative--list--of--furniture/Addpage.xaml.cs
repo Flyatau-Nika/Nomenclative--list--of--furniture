@@ -46,6 +46,10 @@ namespace Nomenclative__list__of__furniture
             TBSize.IsEnabled = true;
             comboBoxSet.IsEnabled = true;
             Set.IsEnabled = true;
+            TBprice.IsEnabled = true;
+            comboBoxmaterial.IsEnabled = true;
+            price.IsEnabled = true;
+            material.IsEnabled = true;
 
         }
 
@@ -62,6 +66,10 @@ namespace Nomenclative__list__of__furniture
             TBSize.IsEnabled = false;
             comboBoxSet.IsEnabled = false;
             Set.IsEnabled = false;
+            TBprice.IsEnabled = true;
+            comboBoxmaterial.IsEnabled = true;
+            price.IsEnabled = true;
+            material.IsEnabled = true;
         }
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
@@ -69,7 +77,7 @@ namespace Nomenclative__list__of__furniture
             if (isfurn)
             {
                 wnd.furn = wnd.ReadFromFurnfile("../../furnlist.xml");
-                Furniture f = new Furniture( TBName.Text, TBSize.Text, comboBoxSet.Text, TBColour.Text);
+                Furniture f = new Furniture( TBName.Text, TBSize.Text, comboBoxSet.Text, TBColour.Text, comboBoxmaterial.Text, TBprice.Text);
                 wnd.furn.LF.Add(f);
 
                 wnd.Savefurn("../../furnlist.xml");
@@ -78,16 +86,19 @@ namespace Nomenclative__list__of__furniture
             else
             {
                 wnd.access = wnd.ReadFromAccessfile("../../accessories.xml");
-                Accessories a = new Accessories(TBName.Text, TBColour.Text, comboBoxValue.Text);
+                Accessories a = new Accessories(TBName.Text, TBColour.Text, comboBoxValue.Text, comboBoxmaterial.Text, TBprice.Text);
                 wnd.access.LA.Add(a);
 
-                wnd.Savefurn("../../acessories.xml");
-                wnd.FurnButton(sender, e);
+                wnd.Saveaccess("../../acessories.xml");
+                wnd.AcesButton(sender, e);
 
             }
 
         }
 
-        
+        private void TBColour_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

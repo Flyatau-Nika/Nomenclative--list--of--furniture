@@ -11,10 +11,11 @@
         <ListView x:Name="listViewaccess" Margin="0,0,0,0" Height ="300" Width="804">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Название" Width="100" DisplayMemberBinding="{Binding Path=name}"/>
-                    <GridViewColumn Header="Размер" Width="70" DisplayMemberBinding="{Binding Path=size}"/>
-                    <GridViewColumn Header="Набор" Width="70" DisplayMemberBinding="{Binding Path=set}"/>
-                    <GridViewColumn Header="Цвет" Width="70" DisplayMemberBinding="{Binding Path=colour}"/>
+                    <GridViewColumn Header="Название" Width="165" DisplayMemberBinding="{Binding Path=name}"/>
+                    <GridViewColumn Header="Цвет" Width="165" DisplayMemberBinding="{Binding Path=size}"/>
+                    <GridViewColumn Header="Назначение" Width="165" DisplayMemberBinding="{Binding Path=set}"/>
+                    <GridViewColumn Header="Материал" Width="165" DisplayMemberBinding="{Binding Path=material}"/>
+                    <GridViewColumn Header="Цена" Width="140" DisplayMemberBinding="{Binding Path=price}"/>
                 </GridView>
             </ListView.View>
         </ListView>

@@ -7,26 +7,26 @@
       mc:Ignorable="d"
       Title="Addpage" Height="337.5" Width="654.311" Background="BurlyWood">
 
-    <Grid>
-        <TextBlock x:Name="Name" HorizontalAlignment="Left" Margin="292,147,0,164" TextWrapping="Wrap" Text="Название" VerticalAlignment="Center" RenderTransformOrigin="-2.741,-5.25" FontSize="20">
+    <Grid Background="#FFAAF096">
+        <TextBlock x:Name="Name" HorizontalAlignment="Left" Margin="192,113,0,198" TextWrapping="Wrap" Text="Наименование" VerticalAlignment="Center" RenderTransformOrigin="-2.741,-5.25" FontSize="20">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFB41E1E" Offset="1"/>
-                    <GradientStop Color="BurlyWood" Offset="0.197"/>
+                    <GradientStop Color="#FF0F4105" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.033"/>
                 </LinearGradientBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="Colour" HorizontalAlignment="Left" Margin="317,241,0,0" TextWrapping="Wrap" Text="Цвет" VerticalAlignment="Top" FontSize="20">
+        <TextBlock x:Name="Colour" HorizontalAlignment="Left" Margin="402,222,0,0" TextWrapping="Wrap" Text="Цвет" VerticalAlignment="Top" FontSize="20">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="BurlyWood" Offset="0.19"/>
-                    <GradientStop Color="#FFB41E1E" Offset="1"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF0F4105" Offset="1"/>
                 </LinearGradientBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBox x:Name="TBName" HorizontalAlignment="Left" Height="23" Margin="271,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TBSize" HorizontalAlignment="Left" Height="23" Margin="60,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="comboBoxSet" HorizontalAlignment="Left" Margin="60,189,0,0" VerticalAlignment="Top" Width="120">
+        <TextBox x:Name="TBName" HorizontalAlignment="Left" Height="23" Margin="193,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TBSize" HorizontalAlignment="Left" Height="23" Margin="26,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.175,2.435"/>
+        <ComboBox x:Name="comboBoxSet" HorizontalAlignment="Left" Margin="26,153,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem>Ангелина</ComboBoxItem>
             <ComboBoxItem>Вероника</ComboBoxItem>
             <ComboBoxItem>Владлена</ComboBoxItem>
@@ -35,76 +35,106 @@
             <ComboBoxItem>Каролина</ComboBoxItem>
             <ComboBoxItem>Элеонора</ComboBoxItem>
         </ComboBox>
-        <ComboBox x:Name="comboBoxValue" HorizontalAlignment="Left" Margin="478,189,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="comboBoxValue" HorizontalAlignment="Left" Margin="513,153,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem>Для ванной</ComboBoxItem>
             <ComboBoxItem>Для гостинной</ComboBoxItem>
             <ComboBoxItem>Для кухни</ComboBoxItem>
             <ComboBoxItem>Для прихожей</ComboBoxItem>
             <ComboBoxItem>Для спальни</ComboBoxItem>
         </ComboBox>
-        <TextBlock x:Name="Room" HorizontalAlignment="Left" Margin="488,147,0,0" TextWrapping="Wrap" Text="Назначение" VerticalAlignment="Top" FontSize="20">
+        <TextBlock x:Name="Room" HorizontalAlignment="Left" Margin="523,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="BurlyWood" Offset="0.19"/>
                     <GradientStop Color="#FFB41E1E" Offset="1"/>
                 </LinearGradientBrush>
-            </TextBlock.Background>
-        </TextBlock>
-        <TextBlock x:Name="Set" HorizontalAlignment="Left" Margin="93,147,0,0" TextWrapping="Wrap" Text="Набор" VerticalAlignment="Top" FontSize="20">
+            </TextBlock.Background><Run Text="Назначение">
+                <Run.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FF0F4105" Offset="1"/>
+                    </LinearGradientBrush>
+                </Run.Background>
+            </Run></TextBlock>
+        <TextBlock x:Name="Set" HorizontalAlignment="Left" Margin="60,113,0,0" TextWrapping="Wrap" Text="Набор" VerticalAlignment="Top" FontSize="20">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="BurlyWood" Offset="0.2"/>
-                    <GradientStop Color="#FFB41E1E" Offset="1"/>
+                    <GradientStop Color="#FFF9F9F9"/>
+                    <GradientStop Color="#FF0F4105" Offset="1"/>
                 </LinearGradientBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="Size" HorizontalAlignment="Left" Margin="85,241,0,0" TextWrapping="Wrap" Text="Размер" VerticalAlignment="Top" FontSize="20">
+        <TextBlock x:Name="Size" HorizontalAlignment="Left" Margin="53,228,0,0" TextWrapping="Wrap" Text="Размер" VerticalAlignment="Top" FontSize="20">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="BurlyWood" Offset="0.187"/>
-                    <GradientStop Color="#FFB41E1E" Offset="1"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF0F4105" Offset="1"/>
                 </LinearGradientBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBox x:Name="TBColour" HorizontalAlignment="Left" Height="23" Margin="271,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="buttonFurn" Content="Мебель" HorizontalAlignment="Left" Margin="140,66,0,0" VerticalAlignment="Top" Width="142" Click="button_Click" Height="47" FontSize="24" FontStretch="SemiCondensed" FontWeight="Medium">
+        <TextBox x:Name="TBColour" HorizontalAlignment="Left" Height="23" Margin="358,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonFurn" Content="Мебель" HorizontalAlignment="Left" Margin="140,56,0,0" VerticalAlignment="Top" Width="142" Click="button_Click" Height="47" FontSize="24" FontStretch="SemiCondensed" FontWeight="Medium">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="BurlyWood" Offset="0.5"/>
                     <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
-                    <GradientStop Color="BurlyWood" Offset="0.5"/>
-                    <GradientStop Color="#FFB41E1E" Offset="1"/>
+                    <GradientStop Color="#FFFBFBFB" Offset="0.5"/>
+                    <GradientStop Color="#FF0F4105" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.496"/>
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="buttonAccess" Content="Аксессуары" HorizontalAlignment="Left" Margin="381,66,0,0" VerticalAlignment="Top" Width="143" Click="button1_Click" Height="47" FontSize="24" FontStretch="SemiCondensed" FontWeight="Medium">
+        <Button x:Name="buttonAccess" Content="Аксессуары" HorizontalAlignment="Left" Margin="381,56,0,0" VerticalAlignment="Top" Width="143" Click="button1_Click" Height="47" FontSize="24" FontStretch="SemiCondensed" FontWeight="Medium">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="BurlyWood" Offset="0.5"/>
                     <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
-                    <GradientStop Color="BurlyWood" Offset="0.5"/>
-                    <GradientStop Color="#FFB41E1E" Offset="1"/>
+                    <GradientStop Color="#FFFDFDFD" Offset="0.5"/>
+                    <GradientStop Color="#FF0F4105" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.496"/>
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Left" Margin="478,285,0,0" VerticalAlignment="Top" Width="120" Click="buttonAdd_Click" Height="23">
+        <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Left" Margin="513,237,0,0" VerticalAlignment="Top" Width="120" Click="buttonAdd_Click" Height="42" FontWeight="Bold">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="BurlyWood" Offset="0.5"/>
                     <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
-                    <GradientStop Color="BurlyWood" Offset="0.5"/>
-                    <GradientStop Color="#FFB41E1E" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                    <GradientStop Color="#FF0F4105" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.428"/>
+                    <GradientStop Color="#FFFBFBFB" Offset="0.499"/>
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="TBchoise" HorizontalAlignment="Left" Margin="305,26,0,0" TextWrapping="Wrap" Text="Выберете:" VerticalAlignment="Top">
+        <TextBlock x:Name="TBchoise" HorizontalAlignment="Left" Margin="285,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="106" FontSize="22">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="BurlyWood" Offset="0.203"/>
-                    <GradientStop Color="#FFB41E19" Offset="1"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF0F4105" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background><Run Text="Выб"/><Run Text="ерите:"/><LineBreak/><Run Text="те"/><Run Text="те:"/></TextBlock>
+        <TextBlock x:Name="material" HorizontalAlignment="Left" Margin="207,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF2C4D1F" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background><Run FontSize="20" Text="Материал"/></TextBlock>
+        <ComboBox x:Name="comboBoxmaterial" HorizontalAlignment="Left" Margin="192,273,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBoxItem>Дерево</ComboBoxItem>
+        <ComboBoxItem>Металл</ComboBoxItem>
+        <ComboBoxItem>Пластик</ComboBoxItem>
+        <ComboBoxItem>Стекло</ComboBoxItem>
+        </ComboBox>
+        <TextBlock x:Name="price" HorizontalAlignment="Left" Margin="402,113,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" FontSize="20">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF214D0F" Offset="1"/>
                 </LinearGradientBrush>
             </TextBlock.Background>
         </TextBlock>
-
+        <TextBox x:Name="TBprice" HorizontalAlignment="Left" Height="23" Margin="358,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Page>

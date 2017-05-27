@@ -6,19 +6,64 @@
         xmlns:local="clr-namespace:Nomenclative__list__of__furniture"
         mc:Ignorable="d"
         Title="Base" Height="470.237" Width="834">
-    <Grid>
+    <Grid Background="#FF0F3C05">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
-            <Button Content="Мебель" MinWidth="100" Click="FurnButton"/>
-            <Button Content="Аксессуары" MinWidth="100" Margin="0,0,0,0" Click="AcesButton"/>
+            <Button Content="Мебель" MinWidth="100" Click="FurnButton">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                        <GradientStop Color="#FFAAF096" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Аксессуары" MinWidth="100" Margin="0,0,0,0" Click="AcesButton">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                        <GradientStop Color="#FFAAF096" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </StackPanel>
         <Frame x:Name="Main" Margin="0,35,0,40" NavigationUIVisibility="Hidden"/>
-        <Button x:Name="buttonadd" Content="Добавить новый объект" HorizontalAlignment="Left" Margin="58,408,0,0" VerticalAlignment="Top" Width="190" Click="button_Click"/>
-        <Button x:Name="buttondelete" Content="Удалить" HorizontalAlignment="Left" Margin="386,408,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.831,0.557" Click="buttondelete_Click" />
-        <Button x:Name="buttonsearch" Content="Поиск" HorizontalAlignment="Left" Margin="575,408,0,0" VerticalAlignment="Top" Width="76" Click="buttonsearch_Click"/>
+        <Button x:Name="buttonadd" Content="Добавить новый объект" HorizontalAlignment="Left" Margin="58,408,0,0" VerticalAlignment="Top" Width="190" Click="button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFAAF096" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttondelete" Content="Удалить" HorizontalAlignment="Left" Margin="386,408,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.831,0.557" Click="buttondelete_Click" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFAAF096" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttonsearch" Content="Поиск" HorizontalAlignment="Left" Margin="575,408,0,0" VerticalAlignment="Top" Width="76" Click="buttonsearch_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFAAF096" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <TextBox x:Name="textBoxSearch" HorizontalAlignment="Left" Height="23" Margin="676,407,0,0" TextWrapping="Wrap" Text="Введите ключевое слово:" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

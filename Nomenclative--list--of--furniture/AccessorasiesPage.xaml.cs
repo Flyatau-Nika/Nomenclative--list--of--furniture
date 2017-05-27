@@ -40,7 +40,7 @@ namespace Nomenclative__list__of__furniture
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString());
+                MessageBox.Show(e.Message);
             }
 
         }

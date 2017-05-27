@@ -41,60 +41,63 @@ namespace Nomenclative__list__of__furniture
             Main.NavigationService.Navigate(p);
         }
 
-        private void AcesButton(object sender, RoutedEventArgs e)
+        public void AcesButton(object sender, RoutedEventArgs e)
         {
             AccessorasiesPage a = new AccessorasiesPage(this);
             Main.NavigationService.Navigate(a);
-           // Main.Content = new AccessorasiesPage();
         }
 
-        /*public void Addfurn(string Name, string Size, string Set, string Colour)
-        {
-            furn.Add(new Furniture(Name, Size, Set, Colour)
-            {
-                _name = Name,
-                _size = Size,
-                _set = Set,
-                _colour = Colour
-            });
-        */
         public void Savefurn(string fileName)
         {
            
             using (FileStream fs = new FileStream(fileName, FileMode.Create))
             {
                 XmlSerializer xs = new XmlSerializer(typeof(ListFurn));
-                BinaryFormatter bf = new BinaryFormatter();
                 try
                 {
-
                     xs.Serialize(fs, furn);
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show(e.ToString());
-                    //MessageBox.Show("Не удалось сохранить файл", "Ошибка",
-                    //     MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(e.Message);
+                }
+            }
+        }
+
+        public void Saveaccess(string fileName)
+        {
+            using (FileStream fs = new FileStream(fileName, FileMode.Create))
+            {
+                XmlSerializer xs = new XmlSerializer(typeof(ListAccess));
+                try
+                {
+                    xs.Serialize(fs, access);
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
                 }
             }
         }
 
         public ListFurn ReadFromFurnfile(string fileName)
         {
-            ListFurn data = null;
-            using (FileStream fs = new FileStream(fileName, FileMode.Open))
+            ListFurn data = new ListFurn();
+            if (File.Exists(fileName))
             {
-                
-                XmlSerializer xs = new XmlSerializer(typeof(ListFurn));
-                BinaryFormatter bf = new BinaryFormatter();
-                try
+                using (FileStream fs = new FileStream(fileName, FileMode.Open))
                 {
-                    data = (ListFurn)xs.Deserialize(fs);
-                }
-                catch
-                {
-                    MessageBox.Show("Не удалось вывести файл", "Ошибка",
-                        MessageBoxButton.OK, MessageBoxImage.Error);
+
+                    XmlSerializer xs = new XmlSerializer(typeof(ListFurn));
+                    try
+                    {
+                        data = (ListFurn)xs.Deserialize(fs);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Не удалось вывести файл", "Ошибка",
+                            MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
             }
             return data;
@@ -102,36 +105,28 @@ namespace Nomenclative__list__of__furniture
 
         public ListAccess ReadFromAccessfile(string fileName)
         {
-            ListAccess data = null;
-            using (FileStream fs = new FileStream(fileName, FileMode.Open))
+            ListAccess data = new ListAccess();
+            if (File.Exists(fileName))
             {
+                using (FileStream fs = new FileStream(fileName, FileMode.Open))
+                {
 
-                XmlSerializer xs = new XmlSerializer(typeof(ListAccess));
-                BinaryFormatter bf = new BinaryFormatter();
-                try
-                {
-                    data = (ListAccess)xs.Deserialize(fs);
-                }
-                catch
-                {
-                    MessageBox.Show("Не удалось вывести файл", "Ошибка",
-                        MessageBoxButton.OK, MessageBoxImage.Error);
+                    XmlSerializer xs = new XmlSerializer(typeof(ListAccess));
+                    try
+                    {
+                        data = (ListAccess)xs.Deserialize(fs);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Не удалось вывести файл", "Ошибка",
+                            MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
             }
             return data;
         }
-        //public List<string> GetFurn(object sender, RoutedEventArgs e)
-        //{
-        //    List<string> list = new List<string>();
-        //    foreach (Furniture obj in furn.LF)
-        //    {
-        //        list.Add(obj.Info(obj));
-        //    }
 
-        //    return list;
-        //}
-
-        private void button_Click(object sender, RoutedEventArgs e)
+        public void button_Click(object sender, RoutedEventArgs e)
         {
             Addpage page = new Addpage(this);
             Main.NavigationService.Navigate(page);
@@ -139,13 +134,13 @@ namespace Nomenclative__list__of__furniture
         }
 
         
-        private void buttonsearch_Click(object sender, RoutedEventArgs e)
+        public void buttonsearch_Click(object sender, RoutedEventArgs e)
         {
             string mes=null;
             bool isFound = false;
             foreach (Furniture obj in furn.LF)
             {
-                if (obj.name.Contains(textBoxSearch.Text) || obj.colour.Contains(textBoxSearch.Text) || obj.size.Contains(textBoxSearch.Text) || obj.set.Contains(textBoxSearch.Text))
+                if (obj.name.Contains(textBoxSearch.Text) || obj.colour.Contains(textBoxSearch.Text) || obj.size.Contains(textBoxSearch.Text) || obj.set.Contains(textBoxSearch.Text) || obj.material.Contains(textBoxSearch.Text) || obj.price.Contains(textBoxSearch.Text))
                 {
                     mes += (obj.Info(obj) + "\n");
                     
@@ -158,7 +153,7 @@ namespace Nomenclative__list__of__furniture
 
             foreach (Accessories obj in access.LA)
             {
-                if (obj.name.Contains(textBoxSearch.Text) || obj.colour.Contains(textBoxSearch.Text) || obj.value.Contains(textBoxSearch.Text))
+                if (obj.name.Contains(textBoxSearch.Text) || obj.colour.Contains(textBoxSearch.Text) || obj.value.Contains(textBoxSearch.Text) || obj.material.Contains(textBoxSearch.Text) || obj.price.Contains(textBoxSearch.Text))
                 {
                     mes += (obj.Info(obj) + "\n");
 
@@ -170,7 +165,7 @@ namespace Nomenclative__list__of__furniture
                 MessageBox.Show("");
         }
 
-        private void buttondelete_Click(object sender, RoutedEventArgs e)
+        public void buttondelete_Click(object sender, RoutedEventArgs e)
         {
             FurniturePage p = new FurniturePage(this);
             wnd.furn = wnd.ReadFromFurnfile("../../furnlist.xml");

@@ -20,15 +20,17 @@ namespace Nomenclative__list__of__furniture
             furn.Clear();
         }
 
-        public void Addfurn(string Name, string Size, string Set, string Colour)
+        public void Addfurn(string Name, string Size, string Set, string Colour, string Material, string Price)
         {
-            furn.Add(new Furniture(Name, Size, Set, Colour)
+            furn.Add(new Furniture(Name, Size, Set, Colour, Material, Price)
             {
                 name = Name,
                 size = Size,
                 set = Set,
-                colour = Colour
-            });
+                colour = Colour,
+                material = Material,
+                price = Price
+        });
         }
         public void Savefurn(string fileName)
         {
@@ -47,22 +49,7 @@ namespace Nomenclative__list__of__furniture
             }
         }
 
-        //public void ReadFromFurnfile(string fileName)
-        //{
-        //    using (FileStream fs = new FileStream(fileName, FileMode.Open))
-        //    {
-        //        BinaryFormatter bf = new BinaryFormatter();
-        //        try
-        //        {
-        //            furn = (List<Furniture>)bf.Deserialize(fs);
-        //        }
-        //        catch
-        //        {
-        //            MessageBox.Show("Не удалось вывести файл", "Ошибка",
-        //                MessageBoxButton.OK, MessageBoxImage.Error);
-        //        }
-        //    }
-        //}
+        
         public List<string> GetFurn()
         {
             List<string> list = new List<string>();

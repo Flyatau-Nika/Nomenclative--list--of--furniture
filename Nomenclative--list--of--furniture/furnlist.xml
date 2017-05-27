@@ -2,64 +2,116 @@
 <ListFurn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LF>
     <Furniture>
-      <name>ффыва</name>
-      <size>21</size>
-      <set>Владлена</set>
-      <colour>2</colour>
-    </Furniture>
-    <Furniture>
-      <name>321</name>
-      <size>444321</size>
-      <set>Изабелла</set>
-      <colour>4444444</colour>
-    </Furniture>
-    <Furniture>
-      <name>чссс</name>
-      <size>44</size>
-      <set>Даниэлла</set>
-      <colour>77</colour>
-    </Furniture>
-    <Furniture>
-      <name>орпл</name>
-      <size>эхзш</size>
-      <set>Даниэлла</set>
-      <colour>зжшр</colour>
+      <name>Шкаф</name>
+      <size>200х150х90</size>
+      <set>Вероника</set>
+      <colour>Бежевый</colour>
+      <material>Дерево</material>
+      <price>14800</price>
     </Furniture>
     <Furniture>
       <name>Шкаф</name>
-      <size>120х50х260</size>
+      <size>180х40х90</size>
       <set>Вероника</set>
-      <colour>Бежевый</colour>
+      <colour>Голубой</colour>
+      <material>Металл</material>
+      <price>15600</price>
     </Furniture>
     <Furniture>
       <name>Тумбочка</name>
-      <size>40х150х80</size>
-      <set>Каролина</set>
-      <colour>Бирюзовый</colour>
+      <size>60х40х70</size>
+      <set>Ангелина</set>
+      <colour>Желтый</colour>
+      <material>Дерево</material>
+      <price>4300</price>
     </Furniture>
     <Furniture>
-      <name>Полочка</name>
-      <size />
-      <set />
-      <colour>Коричневый</colour>
+      <name>Кровать</name>
+      <size>160х240х70</size>
+      <set>Ангелина</set>
+      <colour>Красный</colour>
+      <material>Дерево</material>
+      <price>24300</price>
+    </Furniture>
+    <Furniture>
+      <name>Тумбочка</name>
+      <size>80х40х90</size>
+      <set>Изабелла</set>
+      <colour>Красный</colour>
+      <material>Дерево</material>
+      <price>7800</price>
+    </Furniture>
+    <Furniture>
+      <name>Шкаф</name>
+      <size>160х140х70</size>
+      <set>Даниэлла</set>
+      <colour>Бежевый</colour>
+      <material>Дерево</material>
+      <price>33000</price>
+    </Furniture>
+    <Furniture>
+      <name>Кровать</name>
+      <size>90х40х30</size>
+      <set>Коралина</set>
+      <colour>Белый</colour>
+      <material>Дерево</material>
+      <price>2900</price>
     </Furniture>
     <Furniture>
       <name>Полка</name>
-      <size />
-      <set />
-      <colour>Белый</colour>
+      <size>20х80х170</size>
+      <set>Ангелина</set>
+      <colour>Бежевый</colour>
+      <material>Дерево</material>
+      <price>5700</price>
     </Furniture>
     <Furniture>
-      <name>Шкафчик</name>
-      <size />
-      <set />
+      <name>Полка</name>
+      <size>110х30х20</size>
+      <set>Вероника</set>
       <colour>Коричневый</colour>
+      <material>Дерево</material>
+      <price>7800</price>
     </Furniture>
     <Furniture>
-      <name>Раковина</name>
-      <size />
-      <set />
+      <name>Комод</name>
+      <size>160х80х70</size>
+      <set>Вероника</set>
+      <colour>Коричневый</colour>
+      <material>Дерево</material>
+      <price>11800</price>
+    </Furniture>
+    <Furniture>
+      <name>Кровать</name>
+      <size>210х130х70</size>
+      <set>Даниэлла</set>
       <colour>Белый</colour>
+      <material>Дерево</material>
+      <price>16300</price>
+    </Furniture>
+    <Furniture>
+      <name>Комод</name>
+      <size>140х90х30</size>
+      <set>Ангелина</set>
+      <colour>Желтый</colour>
+      <material>Дерево</material>
+      <price>12300</price>
+    </Furniture>
+    <Furniture>
+      <name>Щкаф</name>
+      <size>180х50х110</size>
+      <set>Владлена</set>
+      <colour>Белый</colour>
+      <material>Дерево</material>
+      <price>17200</price>
+    </Furniture>
+    <Furniture>
+      <name>Шкаф</name>
+      <size>140х30х70</size>
+      <set>Вероника</set>
+      <colour>Голубой</colour>
+      <material>Дерево</material>
+      <price>14300</price>
     </Furniture>
   </LF>
 </ListFurn>
